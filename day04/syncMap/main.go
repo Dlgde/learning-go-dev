@@ -27,6 +27,7 @@ func main() {
 
 	syncMap.Range(func(key, value interface{}) bool {
 		size++
+		fmt.Println(key, value)
 		return true
 	})
 
